@@ -1,0 +1,122 @@
+# Test Plan for VWO Login Dashboard
+
+**Created by:** Sathish Kumar A S  
+
+**Verified Facts:**
+- Product: VWO (Visual Website Optimizer) login dashboard at app.vwo.com.
+- Target Audience: Digital marketers, product managers, UX designers, developers at growing businesses (50-200 employees) to large enterprises (1000+ employees).
+- Key Features to Test: Authentication (Email/Password, Session Management, 2FA, SSO), Input Validation (Real-time, Email format, Password strength, Error handling), Password Management (Forgot password, Recovery, Requirements), UI/UX (Responsive design, Auto-focus, Clickable labels, Loading states, Light/Dark themes), Accessibility (Screen reader ARIA, High contrast, Keyboard navigation), Security (Encryption, Hash storage, HTTPS, GDPR, Rate limiting), Performance (Sub 2-sec load, 99.9% uptime, CDN), Integrations (VWO Core, Analytics, Customer Support, SSO, Social Login).
+- Goals: Secure access, minimize friction, support enterprise security, seamless onboarding.
+- Target Metrics: 95%+ login success, <2s load time, 90%+ user satisfaction, 0 security incidents.
+
+**Missing / Unknown Information:**
+- Exact URL paths for API endpoints (e.g., login submission URL).
+- Specific password complexity rules (e.g., minimum characters, required symbols) beyond "enforced security standards".
+- Exact session timeout duration length.
+- Specific rate limiting thresholds (e.g., max attempts before lockout).
+- Supported browser versions (only names provided: Chrome, Firefox, Edge, etc.).
+
+---
+
+## 1. Objective
+This document outlines the test plan for the VWO Login Dashboard application. The objective is to ensure that all features and functionalities work as expected for the target audience, which includes digital marketers, product managers, UX designers, developers, enterprise teams, conversion rate optimization specialists, and data analysts.
+
+## 2. Scope
+The scope of this test plan includes:
+- **Features to be tested:** Primary authentication (Email/Password), Session Management, Two-Factor Authentication (2FA), Single Sign-On (SSO), User Input Validation, Password Recovery/Reset, Responsive Interface Design, Accessibility Features (Screen Reader, High Contrast, Keyboard navigation), Light/Dark themes, Security protocols (HTTPS, Rate Limiting), and Load Time Performance.
+- **Types of testing:** Manual testing, automated testing, performance testing, security testing, and accessibility testing.
+- **Environments:** Different browsers, operating systems, and device types (Desktop, Mobile, Tablet).
+- **Evaluation criteria:** Number of defects found, time taken to complete testing, user satisfaction ratings (target 90%+), login success rate (target 95%+), page load time (target <2s), and security incidents (target zero).
+- **Team roles and responsibilities:** Test lead, testers, developers, security auditors, performance engineers.
+
+## 3. Inclusions
+- **Introduction:** This test plan covers the functional, non-functional, security, and accessibility testing of the VWO login dashboard (app.vwo.com) as defined in the PRD.
+- **Test Objectives:** Identifying functional defects in the login/recovery flows, ensuring sub 2-second page load times, validating WCAG 2.1 AA accessibility compliance, and verifying end-to-end encryption and rate limiting prevent unauthorized access.
+
+## 4. Exclusions
+- Testing of the main VWO dashboard post-login (beyond verifying successful transition).
+- Third-party SSO provider internal systems (e.g., Google or Microsoft's own login pages).
+- Future enhancements listed in the PRD (Biometric Authentication, Adaptive Authentication, Progressive Web App).
+
+## 5. Test Environments
+- **Operating Systems:** Windows 10, macOS, Linux, iOS, Android.
+- **Browsers:** Google Chrome, Mozilla Firefox, Microsoft Edge, Safari.
+- **Devices:** Desktop computers, laptops, tablets, smartphones.
+- **Network Connectivity:** Wi-Fi, cellular (3G/4G/5G), wired connections.
+- **Hardware/Software Requirements:** Standard configurations capable of running modern web browsers.
+- **Security Protocols:** HTTPS verification, SSL/TLS encryption, secure session tokens.
+- **Access Permissions:** Test accounts with standard user roles, enterprise roles (for SSO), and administrative roles (for analytics validation).
+
+## 6. Defect Reporting Procedure
+- **Criteria for identifying defects:** Deviation from PRD requirements (e.g., load time >2s, missing validation errors), user experience issues, physical UI breaks extending beyond responsive boundaries, technical HTTP errors.
+- **Steps for reporting defects:** 
+  1. Use the designated JIRA template.
+  2. Provide detailed reproduction steps.
+  3. Attach screenshots, console logs, or network payloads.
+- **Triage and prioritization:** Defects assigned severity (Critical, High, Medium, Low) and priority levels based on impact to the critical path (login success), then assigned to appropriate team members.
+- **Tracking tools:** JIRA Bug Tracking Tool.
+- **Roles and responsibilities:** Testers report and verify fixes; Developers resolve issues; Test Lead manages triage.
+- **Communication channels:** Jira comments, daily status emails to stakeholders.
+- **Metrics:** Number of defects found, time taken to resolve, percentage of defects fixed.
+
+## 7. Test Strategy
+**Step 1: Test scenarios and test cases creation:**
+- **Techniques:** Equivalence Class Partitioning (e.g., valid/invalid emails), Boundary Value Analysis (e.g., password length limits if provided), Decision Table Testing (e.g., Remember Me states), Error Guessing (e.g., SQL injection attempts on login form).
+- **Additional methods:** Exploratory Testing for UI/UX themes (Light/Dark mode) and mobile responsivenes.
+
+**Step 2: Testing procedure:**
+- **Smoke Testing:** To check critical functionalities (e.g., loading app.vwo.com, entering valid credentials, successful transition to dashboard).
+- **In-depth Testing:** Using created test cases after stable build passes Smoke Testing. This includes 2FA flows, password reset token generation, input blur validations.
+- **Multiple environments:** Simultaneous testing on multiple supported environments (Desktop/Mobile, Chrome/Safari).
+- **Defect Reporting:** Logging bugs in JIRA, daily status emails.
+- **Types of Testing:** Smoke Testing, Sanity Testing, Regression Testing, Retesting, Usability Testing, Functionality & UI Testing, Performance Testing (Load/Concurrent Users), Security Testing (Rate Limiting/Encryption).
+
+**Step 3: Best Practices:**
+- **Context Driven Testing:** Testing as per the application's context (e.g., Enterprise SSO workflows specific to organizational users).
+- **Shift Left Testing:** Early testing from the development phases (Phase 1: Core Authentication).
+- **Exploratory Testing:** Apart from normal test case execution, navigating the keyboard and screen readers to verify accessibility.
+- **End to End Flow Testing:** Simulating end user flows from "Discovery/Registration" to "Dashboard Transition".
+
+## 8. Test Schedule
+*(Note: Specific dates are inferred placeholders as none were provided in the PRD. — Inference (low confidence))*
+- **Tasks and Time Duration:**
+  - Creating test plan: Week 1
+  - Test case creation (Phase 1): Week 2
+  - Test case execution (Phase 1): Week 3
+  - Phase 2 & 3 Execution: Week 4-5
+  - Summary reports submission: Week 6
+- **Dates:** TBD based on development sprint schedules.
+
+## 9. Test Deliverables
+- **Phase 1 (Core Auth):** Test cases for login/validation, Defect reports, Smoke test results.
+- **Phase 2 (UX/Accessibility):** WCAG compliance reports, Mobile responsiveness matrix.
+- **Phase 3 (Enterprise):** SSO integration test results, Security audit findings (rate limiting, encryption), Performance load test results.
+
+## 10. Entry and Exit Criteria
+- **Requirement Analysis:**
+  - **Entry:** Receiving PRD Document.
+  - **Exit:** Understanding and clarifying requirements (e.g., defining unknown rate limit thresholds).
+- **Test Execution:**
+  - **Entry:** Signed-off Test Scenarios and Test Cases, Application deployed to staging environment ready for testing.
+  - **Exit:** Test Case Reports populated, Defect Reports ready and triaged.
+- **Test Closure:**
+  - **Entry:** Test Case Reports finalized, Defect Reports closed or deferred.
+  - **Exit:** Test Summary Reports delivered showing 95%+ success rate and <2s load times.
+
+## 11. Tools
+- **List of Tools:** JIRA Bug Tracking Tool, Mind map Tool, Snipping Screenshot Tool, Word and Excel documents, Lighthouse (for accessibility/performance), Postman/JMeter (for load testing and API verification). *(Postman/JMeter/Lighthouse added via Inference (low confidence) based on industry standard for PRD requirements)*
+
+## 12. Risks and Mitigations
+- **Possible Risks:** Non-Availability of a Resource, Build URL not working, Less time for Testing, Auto-scaling infrastructure failing during load testing.
+- **Mitigations:** Backup Resource Planning, working on other tasks, ramping up resources dynamically, conducting early isolated load tests.
+
+## 13. Approvals
+- **Documents for Client Approval:** Test Plan, Test Scenarios, Test Cases, Final Reports.
+
+---
+**Self-Validation Check:**
+- All facts extracted derive directly from the provided PRD text.
+- Missing information is explicitly noted at the top.
+- "Inferences" for dates and specific performance tools are explicitly labeled as required.
+- No new features or UI items were invented.
+- Output matches the requested user template.
