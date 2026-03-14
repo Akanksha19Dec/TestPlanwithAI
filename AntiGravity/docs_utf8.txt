@@ -1,0 +1,70 @@
+﻿--- PDF CONTENT BEGIN ---
+Page 1:
+Error reading PDF: 'charmap' codec can't encode character '\ufb03' in position 826: character maps to <undefined>
+--- PDF CONTENT END ---
+--- EXCEL STRUCTURE BEGIN ---
+Sheets in c:\Users\akank\OneDrive\Documents\All_abt_AI\TestPlanwithAI\AntiGravity\VWO_Login_TestPlan.xlsx : ['Objective', 'Scope', 'Inclusions', 'Exclusions', 'Test Environments', 'Defect Reporting Procedure', 'Test Strategy', 'Test Schedule', 'Test Deliverables', 'Entry and Exit Criteria', 'Tools', 'Risks and Mitigations', 'Approvals', 'Verified Facts', 'Missing   Unknown Information']
+
+Sheet 'Objective' Header: ['Purpose', 'Ensure the VWO Login Dashboard provides secure, accessible, performant, and correct authentication and onboarding flows for the target users listed in the PRD.']
+First row data:
+  Purpose: Target Users
+  Ensure the VWO Login Dashboard provides secure, accessible, performant, and correct authentication and onboarding flows for the target users listed in the PRD.: See Verified Facts sheet.
+
+Sheet 'Scope' Header: ['Features to be tested', 'Email/password auth; Remember Me; session management; password reset; optional MFA; SSO (SAML/OAuth) paths; validation behaviors; responsive UI; accessibility features; security behaviors; analytics emission to core dashboard.']
+First row data:
+  Features to be tested: Types of testing
+  Email/password auth; Remember Me; session management; password reset; optional MFA; SSO (SAML/OAuth) paths; validation behaviors; responsive UI; accessibility features; security behaviors; analytics emission to core dashboard.: Manual functional, automated regression, performance/load, security (pen-tests), accessibility (WCAG 2.1 AA), compatibility.
+
+Sheet 'Inclusions' Header: ['Overview', 'Overview, purpose, scope, goals as extracted from PRD.']
+First row data:
+  Overview: Test Objectives
+  Overview, purpose, scope, goals as extracted from PRD.: Verify authentication correctness, session management, password recovery, accessibility per WCAG 2.1 AA, performance targets, and security requirements per PRD.
+
+Sheet 'Exclusions' Header: ['Out of scope', 'Features not listed in PRD (e.g., non-login platform areas). Specific backend admin APIs are out of scope unless provided).']
+
+Sheet 'Test Environments' Header: ['Operating Systems', 'Windows 10; macOS; Linux (exact versions not provided).']
+First row data:
+  Operating Systems: Browsers
+  Windows 10; macOS; Linux (exact versions not provided).: Google Chrome; Mozilla Firefox; Microsoft Edge (versions not provided).
+
+Sheet 'Defect Reporting Procedure' Header: ['Criteria', 'Deviation from PRD requirements (functional, security, performance, accessibility)']
+First row data:
+  Criteria: Steps
+  Deviation from PRD requirements (functional, security, performance, accessibility): Log defects in tracking tool (e.g., JIRA); include reproduction steps, screenshots/logs
+
+Sheet 'Test Strategy' Header: ['Design Techniques', 'Equivalence Class Partitioning; Boundary Value Analysis; Decision Table; State Transition; Use Case Testing; Error Guessing; Exploratory Testing.']
+First row data:
+  Design Techniques: Procedure
+  Equivalence Class Partitioning; Boundary Value Analysis; Decision Table; State Transition; Use Case Testing; Error Guessing; Exploratory Testing.: Smoke testing -> in-depth functional/regression -> cross-environment compatibility; security/pen tests and load tests per PRD; accessibility checks.
+
+Sheet 'Test Schedule' Header: ['Tasks', 'Test plan creation; test case design; test execution; report submission.']
+First row data:
+  Tasks: Dates
+  Test plan creation; test case design; test execution; report submission.: Insufficient information to determine specific dates or timeline.
+
+Sheet 'Test Deliverables' Header: ['Deliverables', 'Test plan; test cases/scripts; execution reports; defect reports; performance and accessibility reports.']
+
+Sheet 'Entry and Exit Criteria' Header: ['Requirement Analysis Entry', 'PRD and requirements documents received.']
+First row data:
+  Requirement Analysis Entry: Requirement Analysis Exit
+  PRD and requirements documents received.: Requirements clarified and test plan approved.
+
+Sheet 'Tools' Header: ['Tools', 'JIRA (bug tracking); screenshot/snipping tools; Word/Excel for documentation. Specific automation/perf/security tools not provided.']
+
+Sheet 'Risks and Mitigations' Header: ['Risks', 'Non-availability of resources; build/URL not working; insufficient time; security/compliance gaps if controls missing; performance issues if CDN/scaling not configured.']
+First row data:
+  Risks: Mitigations
+  Non-availability of resources; build/URL not working; insufficient time; security/compliance gaps if controls missing; performance issues if CDN/scaling not configured.: Backup resource planning; parallel tasks; security audits and monitoring as PRD indicates.
+
+Sheet 'Approvals' Header: ['Approval Documents', 'Test Plan; Test Scenarios; Test Cases; Test Reports.']
+
+Sheet 'Verified Facts' Header: ['Document', 'VWO Login Dashboard (app.vwo.com)']
+First row data:
+  Document: Product Vision
+  VWO Login Dashboard (app.vwo.com): Secure, intuitive, efficient login experience connecting users to VWO platform.
+
+Sheet 'Missing   Unknown Information' Header: ['Item', 'API documentation / authentication endpoint contracts (URLs, request/response schemas, status codes).']
+First row data:
+  Item: Item
+  API documentation / authentication endpoint contracts (URLs, request/response schemas, status codes).: Test accounts / credentials / test data for authentication flows.
+--- EXCEL STRUCTURE END ---

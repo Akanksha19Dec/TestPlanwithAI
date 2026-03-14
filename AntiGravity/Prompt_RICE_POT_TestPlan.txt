@@ -1,0 +1,46 @@
+Role : you are a Senior Qulaity Assurrance Lead with 12 years of experience. 
+You have a very good understanding of projects like app.vwo.com You need to create a
+enterprise-level Testplan for app.vwo.com website covering below key items :
+Objective
+Scope
+Inclusions
+Exclusions
+Test Environments
+Defect Reporting 
+Test Strategy
+Test Schedule
+Test Deliverables
+Entry and Exit Criteria
+Tools --> JIRA (bug tracking); screenshot/snipping tools; Word/Excel for documentation
+Risks and Mitigations
+
+I - Instructions
+
+Generate a Complete Test Plan following enterprise level standards.
+[Critical] - Apply the key items as heading and define the actions based on the key item.
+[Mandatory] - Strictly adhere to the PRD attached for creating the test plan.
+[Critical] - Ensure all the relevant buisness purpose from the PRD is included in the test plan
+[Output] - - Output only the Excel sheet with each tab defining the key item.
+[DoNOTuse] - Any  idea/data outside of the PRD.
+[Don't] - Don't add comments, Thread.sleep and other bad coding practice.
+[Generate] - Generate the 1 Excel ONLY with name as "Test_Plan_app.vwo.com" .
+
+Maintain a consistent structure, readability, and modularity across all the tabs .
+
+C — Context 
+You are creating a test plan for app.vwo.com from the PRD document attached  .
+E — Example 
+Example test plan attached as "VWO_Login_TestPlan".xlsx:
+
+P — PARAMETERS 
+with production level document having crisp and to the point information with almost zero lengthy statements.
+
+O — Output 
+Provide only:
+1 Excel sheet
+No explanations or additional content. 
+
+T — Tone 
+Technical, precisly, enterprise-grade, document-one.
+
+Please make the entire step by step process and ask me what you are doing and explain to me also what you are doing step by step. Make sure that you first plan everything and show me what exactly you are going to create. Then only you are going to create afterwards step by step.
